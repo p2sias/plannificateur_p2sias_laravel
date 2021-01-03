@@ -99,8 +99,8 @@ Voici la liste des fonctionnalités implémentées
 ## Les difficultés rencontrées : 
 
 Dans l'ensemble j'ai pu avancer sans trop de blocages étant donné que je manipulait déjà Laravel l'année dernière,
-néanmoins ce projet m'a permis de renforcer mes compétence, les Modèles qui au début me parraissait un peu floue
-notement au niveau des relations (utilisation des relations dans les controllers, dans les vue blades, etc...), 
+néanmoins ce projet m'a permis de renforcer mes compétence, les Modèles qui au début me parraissaient un peu flous
+notement au niveau des relations (utilisation des relations dans les controllers, dans les vues blades, etc...) 
 et les Policies sont maintenant aquis grace à un peu de recherche sur la doc Laravel et sur d'autres sites style YouTube, StackOF, Comment ca mar... non rien c'est tout.
 
     
