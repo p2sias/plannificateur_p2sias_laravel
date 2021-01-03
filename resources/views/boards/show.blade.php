@@ -13,9 +13,7 @@
         </div>
         <div id="board-tasks">
             <p>Taches du board  
-            @if (session()->get('user_id') == $board->owner->id)
-                <a class="create-link" href="{{route('task.create', $board->id)}}">+</a>
-            @endif
+            <a class="create-link" href="{{route('task.create', $board->id)}}">+</a>
             </p>
             <ul>
                 @foreach ($board->tasks as $task)
