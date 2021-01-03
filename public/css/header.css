@@ -1,0 +1,33 @@
+body
+{
+    margin: 0;
+}
+header
+{
+    height: px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+nav
+{
+    flex-wrap: wrap;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: grey;
+}
