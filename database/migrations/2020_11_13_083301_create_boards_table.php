@@ -17,10 +17,11 @@ class CreateBoardsTable extends Migration
             $table->id();
             $table->string("title"); 
             $table->text("description")->nullable();
-            // $table->unsignedBigInteger("user_id"); 
-            // $table->foreign('user_id')->references("id")->on(("user"))->setNullOnDelete();
-            $table->foreignId("user_id")->nullable()->constrained()->onDelete("set null");
-            // $table->foreignId("user_id")->nullable()->constrained()->setNullOnDelete();
+            $table->unsignedBigInteger("user_id"); 
+
+            $table->foreign('user_id')->references("id")->on("user")->onDelete('cascade');
+           
+            
             $table->timestamps();
         });
     }

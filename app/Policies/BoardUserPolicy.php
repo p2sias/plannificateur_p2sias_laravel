@@ -12,9 +12,10 @@ class BoardUserPolicy
 
 
     /**
-     * Determine whether the user can create models.
+     * Seul le propriétaire du board peut ajouter des membres
      *
      * @param  \App\Models\User  $user
+     * @param \App\Models\BoardUser $boardUser
      * @return mixed
      */
     public function create(User $user, BoardUser $boardUser)
@@ -23,7 +24,7 @@ class BoardUserPolicy
     }
 
     /**
-     * Determine whether the user can delete the model.
+     *  Seul le propriétaire du board peut supprimer des membres
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\BoardUser  $boardUser

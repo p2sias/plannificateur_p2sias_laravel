@@ -9,12 +9,6 @@ class BoardUser extends Pivot
 {
     use HasFactory;
 
-    /**
-     * Indicates if the IDs are auto-incrementing.
-     *
-     * @see https://laravel.com/docs/8.x/eloquent-relationships#defining-custom-intermediate-table-models
-     * @var bool
-     */
     public $incrementing = true;
 
     protected $primaryKey = "id";

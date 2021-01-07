@@ -23,7 +23,7 @@ class BoardPolicy
     }
 
     /**
-     * Determine whether the user can view the model.
+     * Un utilisateur peut voir une board seulement si il y participe ou en est le propriétaire
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Board  $board
@@ -35,7 +35,7 @@ class BoardPolicy
     }
 
     /**
-     * Determine whether the user can update the model.
+     * Un utilisateur peut mettre à jour SES boards
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Board  $board
@@ -47,7 +47,7 @@ class BoardPolicy
     }
 
     /**
-     * Determine whether the user can delete the model.
+     * Un utilisateur peut supprimer SES boards
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Board  $board
@@ -56,29 +56,5 @@ class BoardPolicy
     public function delete(User $user, Board $board)
     {
         return $user->id == $board->owner->id;
-    }
-
-    /**
-     * Determine whether the user can restore the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\Board  $board
-     * @return mixed
-     */
-    public function restore(User $user, Board $board)
-    {
-
-    }
-
-    /**
-     * Determine whether the user can permanently delete the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\Board  $board
-     * @return mixed
-     */
-    public function forceDelete(User $user, Board $board)
-    {
-        
     }
 }

@@ -37,8 +37,7 @@ class User extends Authenticatable
 
     /**
      * Renvoi la liste des toutes les tâches des boards auxquel l'utilisateur participe
-     * (hormis celles du board dont il est le propriétaire! )
-     * //TODO : test
+     * 
      * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
      */
     public function allTasks() {
@@ -113,12 +112,4 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    /**
-     * The accessors to append to the model's array form.
-     *
-     * @var array
-     */
-    protected $appends = [
-        // 'profile_photo_url',
-    ];
 }

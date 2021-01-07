@@ -6,12 +6,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 
-/**
- * Représente un commentaire rédigé sur une tâche par un utilisateur
- * 
- * @author Nicolas Faessel <nicolas.faessel@ynov.com>
- * 
- */
 class Comment extends Model
 {
     use HasFactory;

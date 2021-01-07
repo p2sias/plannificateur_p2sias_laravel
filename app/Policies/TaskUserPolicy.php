@@ -11,7 +11,7 @@ class TaskUserPolicy
     use HandlesAuthorization;
 
     /**
-     * Determine whether the user can create models.
+     * Seul le proprio du board peut ajouter des membres à la tache
      *
      * @param  \App\Models\User  $user
      * @return mixed
@@ -23,7 +23,7 @@ class TaskUserPolicy
 
 
     /**
-     * Determine whether the user can delete the model.
+     * Seul le proprio du board peut supprimer des membres à la tache
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\TaskUser  $taskUser

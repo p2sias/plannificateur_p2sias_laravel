@@ -9,8 +9,10 @@ class Board extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = "id";
+
     /**
-     * The "booted" method of the model.
+     * S'execute à la création du modèle
      *
      * @return void
      */
@@ -48,6 +50,11 @@ class Board extends Model
                     ->withTimestamps();
     }
 
+    /**
+     * Renvoie les taches liées à cette board
+     * 
+     * @return  \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function tasks() {
         return $this->hasMany(Task::class);
     }

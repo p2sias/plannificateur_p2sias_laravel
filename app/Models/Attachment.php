@@ -6,19 +6,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 
-/**
- * Représente un fichier attachée à une tâche par un utilisateur
- * 
- * @author Nicolas Faessel <nicolas.faessel@ynov.com>
- * 
- */
+
 class Attachment extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = "id";
 
     /**
-     * Renvoi l'utilisateur qui a posé la pièce jointe
+     * Renvoi l'utilisateur qui a posté la pièce jointe
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -29,7 +25,7 @@ class Attachment extends Model
 
 
     /**
-     * Renvoi la tâche à laquelle la pièce jointe est attachée
+     * Renvoi la tâche à laquelle la pièce jointe est liée
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

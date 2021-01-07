@@ -25,7 +25,7 @@ class TaskPolicy
     }
 
     /**
-     * Determine whether the user can view the model.
+     * Seuls ceux qui participe au board peuvent voir une tache
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Task  $task
@@ -33,22 +33,22 @@ class TaskPolicy
      */
     public function view(User $user, Task $task)
     {
-        return $user->id === $task->board->owner->id || $task->board->users->find($user->id);
+        return $task->board->users->find($user->id);
     }
 
     /**
-     * Determine whether the user can create models.
+     * Un utilisateur peut créer une tache seulement si il participe au board
      *
      * @param  \App\Models\User  $user
      * @return mixed
      */
     public function create(User $user, Board $board)
     {
-        //return $user->id === $board->owner->id;
+        return $board->users->find($user->id);
     }
 
     /**
-     * Determine whether the user can update the model.
+     * Un utilisateur proprio du board ou qui participe a la tache peuvent mettre à jour la tache
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Task  $task
@@ -60,7 +60,7 @@ class TaskPolicy
     }
 
     /**
-     * Determine whether the user can delete the model.
+     * Seul le proprio du board peut suprimer la tache
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Task  $task
@@ -69,29 +69,5 @@ class TaskPolicy
     public function delete(User $user, Task $task)
     {
         return $user->id === $task->board->owner->id;
-    }
-
-    /**
-     * Determine whether the user can restore the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\Task  $task
-     * @return mixed
-     */
-    public function restore(User $user, Task $task)
-    {
-        //
-    }
-
-    /**
-     * Determine whether the user can permanently delete the model.
-     *
-     * @param  \App\Models\User  $user
-     * @param  \App\Models\Task  $task
-     * @return mixed
-     */
-    public function forceDelete(User $user, Task $task)
-    {
-        //
     }
 }

@@ -23,7 +23,7 @@ class CommentPolicy
     }
 
     /**
-     * Determine whether the user can view the model.
+     * Seul un utilisateur qui fait partie de la tache ou qui est le propriétaire du board de cette tache peut voir les commentaires
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Comment  $comment
@@ -35,7 +35,7 @@ class CommentPolicy
     }
 
     /**
-     * Determine whether the user can create models.
+     * Seul un utilisateur qui fait partie de la tache ou qui est le propriétaire du board de cette tache peut poster commentaires
      *
      * @param  \App\Models\User  $user
      * @return mixed
@@ -47,7 +47,7 @@ class CommentPolicy
 
 
     /**
-     * Determine whether the user can delete the model.
+     * Seul le proprio du board peut supprimer des commentaires
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Comment  $comment
