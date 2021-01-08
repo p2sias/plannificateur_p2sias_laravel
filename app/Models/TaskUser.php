@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Models\{Task, User};
 class TaskUser extends Pivot
 {
-
     use HasFactory; 
 
     public $incrementing = true;

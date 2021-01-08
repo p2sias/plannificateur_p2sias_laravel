@@ -49,7 +49,6 @@ class LoginController extends Controller
         ]);
     }
 
-
     /**
      * Déconnecte l'utilisateur
      * 
