@@ -74,33 +74,33 @@ Un blog très pertinent  : http://laravel.sillo.org/
 ## Conclusion de fin de projet
 
 Voici la liste des fonctionnalités implémentées
-    - ** Un utilisateur peut creer un board
-    - ** Un utilisateur peut supprimer un board si il en est le propriétaire
-    - ** Un utilisateur peut mettre à jour un board si il en est le propriétaire
-    - ** Un utilisateur peut ajouter un membre à un board seulement si il est propriétaire de ce board
-    - ** Un utilisateur peut supprimer un membre d'un board seulement si il est propriétaire de ce board
-    - ** Un utilisateur peut voir un board seulement si il y participe ou si il en est le propriétaire
-    - ** Un utilisateur peut quitter un board seulement si il y participe
-    - ** Un utilisateur peut créer une tache dans un board seulement si il est propriétaire du board ou si il participe à celui-ci
-    - ** Un utilisateur peut mettre à jour une tache dans un board seulement si il est propriétaire du board,
-         si il participe juste à la tache, il pourra néanmoins modifier le statut de la tache
-    - ** Un utilisateur peut supprimer une tache dans un board seulement si il est propriétaire du board de cette tache
-    - ** Un utilisateur peut ajouter un membre à une tache seulement si il est le propriétaire de la board de cette tache
-    - ** Un utilisateur peut supprimer un membre d'une une tache seulement si il est le propriétaire de la board de cette tache
-    - ** Un utilisateur peut commenter une tache seulement si il y est assigné ou si il est le propriétaire du board de cette tache
-    - ** Un utilisateur peut supprimer un commentaire seulement si il est propriétaire du board de la tache ou se trouve le commentaire
-    - ** Un utilisateur peut quitter une tache seulement si il y participe
-    - ** Un utilisateur peut voir une tache seuleemnt si il participe ou est le propriétaire du board de cette tache
-    - ** Un utilisateur peut creer un compte
-    - ** Un utilisateur peut se connecter si il ne l'est pas déjà
-    - ** Un utilisateur peut se connecter
+    * Un utilisateur peut creer un board <br>
+    * Un utilisateur peut supprimer un board si il en est le propriétaire <br>
+    * Un utilisateur peut mettre à jour un board si il en est le propriétaire <br>
+    * Un utilisateur peut ajouter un membre à un board seulement si il est propriétaire de ce board <br>
+    * Un utilisateur peut supprimer un membre d'un board seulement si il est propriétaire de ce board <br>
+    * Un utilisateur peut voir un board seulement si il y participe ou si il en est le propriétaire <br>
+    * Un utilisateur peut quitter un board seulement si il y participe <br>
+    * Un utilisateur peut créer une tache dans un board seulement si il est propriétaire du board ou si il participe à celui-ci <br>
+    * Un utilisateur peut mettre à jour une tache dans un board seulement si il est propriétaire du board, <br>
+      si il participe juste à la tache, il pourra néanmoins modifier le statut de la tache <br>
+    * Un utilisateur peut supprimer une tache dans un board seulement si il est propriétaire du board de cette tache <br>
+    * Un utilisateur peut ajouter un membre à une tache seulement si il est le propriétaire de la board de cette tache <br>
+    * Un utilisateur peut supprimer un membre d'une une tache seulement si il est le propriétaire de la board de cette tache <br>
+    * Un utilisateur peut commenter une tache seulement si il y est assigné ou si il est le propriétaire du board de cette tache <br>
+    * Un utilisateur peut supprimer un commentaire seulement si il est propriétaire du board de la tache ou se trouve le commentaire <br>
+    * Un utilisateur peut quitter une tache seulement si il y participe <br>
+    * Un utilisateur peut voir une tache seuleemnt si il participe ou est le propriétaire du board de cette tache <br>
+    * Un utilisateur peut creer un compte <br>
+    * Un utilisateur peut se connecter si il ne l'est pas déjà <br>
+    * Un utilisateur peut se connecter <br>
 
 
 ## Les difficultés rencontrées : 
 
 Dans l'ensemble j'ai pu avancer sans trop de blocages étant donné que je manipulait déjà Laravel l'année dernière,
-néanmoins ce projet m'a permis de renforcer mes compétence, les Modèles qui au début me parraissait un peu floue
-notement au niveau des relations (utilisation des relations dans les controllers, dans les vue blades, etc...), 
+néanmoins ce projet m'a permis de renforcer mes compétence, les Modèles qui au début me parraissaient un peu flous
+notement au niveau des relations (utilisation des relations dans les controllers, dans les vues blades, etc...) 
 et les Policies sont maintenant aquis grace à un peu de recherche sur la doc Laravel et sur d'autres sites style YouTube, StackOF, Comment ca mar... non rien c'est tout.
 
     
