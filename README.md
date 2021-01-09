@@ -73,7 +73,7 @@ Un blog très pertinent  : http://laravel.sillo.org/
 
 ## Conclusion de fin de projet
 
-Voici la liste des fonctionnalités implémentées
+Voici la liste des fonctionnalités implémentées<br>
     * Un utilisateur peut creer un board <br>
     * Un utilisateur peut supprimer un board si il en est le propriétaire <br>
     * Un utilisateur peut mettre à jour un board si il en est le propriétaire <br>
@@ -93,14 +93,13 @@ Voici la liste des fonctionnalités implémentées
     * Un utilisateur peut voir une tache seuleemnt si il participe ou est le propriétaire du board de cette tache <br>
     * Un utilisateur peut creer un compte <br>
     * Un utilisateur peut se connecter si il ne l'est pas déjà <br>
-    * Un utilisateur peut se connecter <br>
 
 
 ## Les difficultés rencontrées : 
 
 Dans l'ensemble j'ai pu avancer sans trop de blocages étant donné que je manipulait déjà Laravel l'année dernière,
-néanmoins ce projet m'a permis de renforcer mes compétence, les Modèles qui au début me parraissaient un peu flous
-notement au niveau des relations (utilisation des relations dans les controllers, dans les vues blades, etc...) 
+néanmoins ce projet m'a permis de renforcer mes compétences, les Modèles qui au début me parraissaient un peu flous
+notamment au niveau des relations (utilisation des relations dans les controllers, dans les vues blades, etc...) 
 et les Policies sont maintenant aquis grace à un peu de recherche sur la doc Laravel et sur d'autres sites style YouTube, StackOF, Comment ca mar... non rien c'est tout.
 
     
